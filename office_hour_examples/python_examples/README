@@ -1,0 +1,43 @@
+                                                          Python exercises
+
+Objective:
+	Use the miniconda module and create your own environment
+        Successfully load your new anaconda environment into the jupyter notebook interface on OOD
+        Use your miniconda environment to run a batch job   
+
+	Use the miniconda module and create an environment containing these packages: jupyter jupyterlab numpy
+
+1. In the terminal, request an interactive compute session with ‘salloc’
+2. Run `module load miniconda`  to load the miniconda module
+3. Run `conda env list' to see available existing environments 
+4. Create a new conda environment by running 'conda create -n jupy_workshop jupyter jupyterlab numpy' 
+5. Activate the conda environment by typing 'conda activate jupy_workshop' 
+6. Exit the conda environment by typing 'conda deactivate'
+7. Exit the interactive compute session with `exit`
+
+	Load jupy_workshop environment into Jupyter notebook OOD app
+
+1. In terminal, type 'module purge' to unload miniconda and any other existing modules 
+2. Run 'ycrc_conda_env.sh update' to load the jupy_workshop environment to the OOD interface 
+3. Go to the OOD website, and click the Jupyter app 
+4. In the environment setup box, click the drop down box and select the environment, 'jupy_workshop'. If it is not 
+   there, please repeat steps 1 and 2 and ensure the command ran successfully 
+5. Start an OOD jupyter session with your environment for 1 hour with 1 cpu. 
+6. To quit the Jupyter session, close the tab, and delete the session on the OOD website to free up compute resources. 
+
+	Use your jupy_workshop environment to run a batch job 
+
+1. In the terminal, use the `cd`  command to navigate to the directory where your example scripts are located
+2. We will run an example python script called `py_example.py` as a batch job. 
+3. Open `py_example.slurm` with your favorite editor and add necessary lines to complete the batch script 
+4. Run `sbatch py_example.slurm` to submit your job
+5. Run `squeue --me` to check your job ID, status and the node the job is running 
+9. After your job is completed (takes about 6 minutes), run `seff YourJobID` to check wall-clock time, memory usage,and CPU utilizations  
+10.Open the file named slurm-YourJobID.out to review the output from your job.  
+11.The completed output file should show that using numpy decreased analysis time by >10x than using mathematics
+   in system python. This script also highlights how you can use the time function to benchmark portions of your code,
+   allowing you to isolate section of code that takes the longest to run, and focus on optimizing those segments.
+
+You are welcome to try running your own scripts. If you encounter any issues, please ask us for assistance. 
+
+
