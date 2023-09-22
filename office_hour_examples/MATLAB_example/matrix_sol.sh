@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #### Run on workshop reservation ###
-##SBATCH --reservation=workshop
+#SBATCH -p day
 
 #### Request 1 CPU #####
 #SBATCH -c 1
@@ -16,7 +16,7 @@
 #SBATCH -J  MATLAB_example
 
 #### Provide email for notification of job start/completion ###
-#SBATCH --mail-user=aya.nawano@yale.edu
+#SBATCH --mail-user=YOUREMAIL # Change this to your email address
 #SBATCH --mail-type=ALL
 
 ##### Remove any loaded modules ####
