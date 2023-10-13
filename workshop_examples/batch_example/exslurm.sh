@@ -3,11 +3,11 @@
 ####Run on workshop reservation####
 #SBATCH --reservation=workshop
 
-####request 1 G of mem/cpu#####
+####request 1G of mem/cpu#####
 #SBATCH --mem-per-cpu=XG
 
 ####Request 10 minutes of run time####
-#SBATCH -t=XX:XX:XX
+#SBATCH --time=XX:XX
 
 ####provide email for notification of job start/completion####
 #SBATCH --mail-user=YOUREMAIL
