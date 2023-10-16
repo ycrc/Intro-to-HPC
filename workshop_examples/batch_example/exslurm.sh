@@ -1,17 +1,19 @@
 #!/bin/bash
 
 ####Run on workshop reservation####
-#SBATCH --reservation=workshop
+#SBATCH --reservation=ycrc_intro
+
+###Name your job as MC_test###
+#SBATCH -J XXXXXXX
 
 ####request 1G of mem/cpu#####
 #SBATCH --mem-per-cpu=XG
 
 ####Request 10 minutes of run time####
-#SBATCH --time=XX:XX
+#SBATCH -t XX:XX
 
 ####provide email for notification of job start/completion####
-#SBATCH --mail-user=YOUREMAIL
-#SBATCH --mail-type=XXXX
+#SBATCH --mail-type=XXX
 
 #######remove any loaded modules######
 module COMMANDTOREMOVEMODULES
