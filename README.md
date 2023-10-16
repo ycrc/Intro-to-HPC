@@ -1,3 +1,3 @@
 # Intro-to-HPC
 
-Our slides are located at https://tinyurl.com/Intro-HPC-10-16-2023
+Our slides are located at tinyurl.com/Intro-to-HPC-10-16
