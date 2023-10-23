@@ -1,10 +1,9 @@
 #!/bin/bash
 
-#### Run on workshop reservation ###
-#SBATCH -p day
+#-------- Replace XXXX with correct flags and words -----------#
 
-#### Request 1 CPU #####
-#SBATCH -c 1
+#### Run on workshop reservation ###
+#SBATCH --reservation=ycrc_intro
 
 #### Request 10 minites of run time ###
 #SBATCH -t 10:00
@@ -13,8 +12,9 @@
 #SBATCH -J PSCL_example
 
 #### Provide email for notification of job start/completion ###
-##SBATCH --mail-user=YOUREMAIL #Change this to your email address
 #SBATCH --mail-type=ALL
+
+#-------- Replace with correct commands ----------------------#
 
 ##### Remove any loaded modules ####
 module purge
