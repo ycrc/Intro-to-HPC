@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#-------- Replace XXXX with correct flags and words -----------#
+#-------- Replace XXXX with correct flags and values -----------#
 
-#### Run on workshop reservation ###
+#### Run on workshop reservation. Do not change this line. ###
 #SBATCH --reservation=ycrc_intro
 
 #### Request 10 minites of run time ###

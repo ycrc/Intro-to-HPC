@@ -6,25 +6,25 @@
 #SBATCH --reservation=ycrc_intro  
 
 #### Request 10 GB of memory per CPU ###
-#SBATCH --mem-per-cpu XXX
+#SBATCH --mem-per-cpu 10G
 
 #### Request 10 minites of run time ###
-#SBATCH XX 10:00
+#SBATCH -t 10:00
 
 #### Set the name of the job as MATLAB_example ####
-#SBATCH -J XXXXXXXXXXXXXX
+#SBATCH -J MATLAB_example
 
 #### Provide email for notification of job start/completion ###
-#SBATCH --mail-type=XXX
+#SBATCH --mail-type=ALL
 
 
 #----------- Replace with correct commands ----------------------#
 
 ##### Remove any loaded modules ####
-module COMMANDTOREMOVEMODULES
+module purge
 
 ##### Load the MATLAB/2023a module here ####
-INSERT COMMAND TO LOAD MODULE HERE
+module load MATLAB/2023a
 
 ##### Run matrix.batch.m here. Do not change this line. ####
 matlab -batch "matrix_batch" 
