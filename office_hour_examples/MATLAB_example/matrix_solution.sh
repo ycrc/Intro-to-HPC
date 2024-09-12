@@ -3,13 +3,13 @@
 #---------- Replace XXXX with correct flags and values -----------#
 
 #### Run on workshop reservation. Do not change this line.###
-#SBATCH --reservation=ycrc_intro  
+##SBATCH --reservation=ycrc_intro  
 
 #### Request 10 GB of memory per CPU ###
 #SBATCH --mem-per-cpu 10G
 
 #### Request 10 minites of run time ###
-#SBATCH -t 10:00
+#SBATCH -t 30:00
 
 #### Set the name of the job as MATLAB_example ####
 #SBATCH -J MATLAB_example

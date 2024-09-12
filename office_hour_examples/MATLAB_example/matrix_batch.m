@@ -1,6 +1,6 @@
 
 tic;
-for i=1:5
+for i=1:15
  size = 10000;
  mat = rand(size, size) ;
 
