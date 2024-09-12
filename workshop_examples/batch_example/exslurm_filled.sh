@@ -4,7 +4,7 @@
 ##SBATCH --reservation=ycrc_intro
 
 ### Run on day partition ###
-#SBATCH -p day 
+#SBATCH -p day
 
 ### Name your job as MC_test ###
 #SBATCH -J MC_test 
@@ -13,7 +13,7 @@
 #SBATCH --mem-per-cpu=1G
 
 ### Request 10 minutes of run time ###
-#SBATCH -t 10:00 
+#SBATCH -t 20:00 
 
 ### Receive email notifications when this job starts/completes ###
 #SBATCH --mail-type=all
@@ -25,7 +25,7 @@
 module purge 
 
 ### Load R module ###
-module load R
+module load R/4.3.2-foss-2022b
 
 ### Execute the R script ###
 Rscript MC.R 

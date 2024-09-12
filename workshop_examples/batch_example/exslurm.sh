@@ -22,7 +22,7 @@
 
 
 ### Remove any loaded modules ###
-module COMMANDTOREMOVEMODULES
+INSERT COMMAND TO UNLOAD MODULES
 
 ### Load R module ###
 INSERT COMMAND TO LOAD MODULE HERE
