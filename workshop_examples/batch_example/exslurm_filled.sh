@@ -25,7 +25,7 @@
 module purge 
 
 ### Load R module ###
-module load R/4.3.2-foss-2022b
+module load R/4.4.1-foss-2022b
 
 ### Execute the R script ###
 Rscript MC.R 
