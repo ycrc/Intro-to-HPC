@@ -2,8 +2,8 @@
 
 #-------- Replace XXXX with correct flags and values -----------#
 
-#### Run on workshop reservation. Do not change this line. ###
-#SBATCH --reservation=ycrc_intro
+#### Run on workshop reservation. Comment this out if you are running this job after the workshop ###
+##SBATCH --reservation=ycrc_intro
 
 #### Request 10 minites of run time ###
 #SBATCH -t 10:00
@@ -19,8 +19,11 @@
 ##### Remove any loaded modules ####
 module purge
 
-##### Load the R/4.3.0-foss-2020b module here ####
-module load R/4.3.0-foss-2020b
+##### Load the R/4.4.1-foss-2022b module here ####
+module load R/4.4.1-foss-2022b
+
+##### Load the R-bundle-CRAN/2024.06-foss-2022b module here ###
+module load R-bundle-CRAN/2024.06-foss-2022b
 
 ##### Run pscl_example.R here ####
 Rscript pscl_example.R

@@ -2,7 +2,7 @@
 
 #---------- Replace XXXX with correct flags and values -----------#
 
-#### Run on workshop reservation. Do not change this line.###
+#### Run on workshop reservation. If you are running this job after workshop, comment this line out.###
 #SBATCH --reservation=ycrc_intro  
 
 #### Request 10 GB of memory per CPU ###
@@ -21,7 +21,7 @@
 #----------- Replace with correct commands ----------------------#
 
 ##### Remove any loaded modules ####
-module COMMANDTOREMOVEMODULES
+INSERT COMMAND TO UNLOAD MODULES
 
 ##### Load the MATLAB/2023a module here ####
 INSERT COMMAND TO LOAD MODULE HERE
