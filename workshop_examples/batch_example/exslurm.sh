@@ -6,13 +6,10 @@
 ### Run on day partition ###
 #SBATCH -p day 
 
-### Name your job as MC_test ###
-#SBATCH -J XXXXXXX
-
 ### Request 1 GB of mem/cpu ###
 #SBATCH --mem-per-cpu=XG
 
-### Request 10 minutes of run time ###
+### Request 20 minutes of run time ###
 #SBATCH -t XX:XX
 
 ### Receive email notifications when this job starts/completes ###
