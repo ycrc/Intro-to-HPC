@@ -4,7 +4,7 @@
 ##SBATCH --reservation=ycrc_intro
 
 ### Run on day partition ###
-#SBATCH -p day
+#SBATCH -p admintest
 
 ### Request 1 GB of mem/cpu ###
 #SBATCH --mem-per-cpu=1G
@@ -19,7 +19,7 @@
 
 
 ### Remove any loaded modules ###
-module purge 
+module reset 
 
 ### Load R module ###
 module load R/4.4.1-foss-2022b
