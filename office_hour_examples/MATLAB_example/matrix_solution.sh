@@ -21,7 +21,7 @@
 #----------- Replace with correct commands ----------------------#
 
 ##### Remove any loaded modules ####
-module purge
+module reset
 
 ##### Load the MATLAB/2023a module here ####
 module load MATLAB/2023a
