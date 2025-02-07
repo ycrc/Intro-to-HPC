@@ -57,8 +57,9 @@ exit
 1. On Open OnDemand, request an RStudio server with R version `R/4.4.1-foss-2022b` with 1 CPU for 1 hour.
 2. Open an RStudio session 
 3. Navigate the file system to find `zoo_example.R`
-4. Run the code to ensure that it does not produce any errors and generates a plot 
-5. Quit the RStudio session:
+4. Make sure to replace `NetID` with your own NetID in `setwd("/home/NetID/project/workshop/Intro-to-HPC/office_hour_examples/R_example")`
+5. Run the code to ensure that it does not produce any errors and generates a plot 
+6. Quit the RStudio session:
 ```
 q()
 ```
