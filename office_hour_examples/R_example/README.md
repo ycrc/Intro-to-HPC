@@ -15,20 +15,11 @@ Our documentation on R : https://docs.ycrc.yale.edu/clusters-at-yale/guides/r/
 
 1. Find what versions of R are availeble on the cluster:
 ```
-module avail R/4
-```
-2. List which R packages are installed with `R/4.4.1-foss-2022b` module:
-```
-module help R/4.4.1-foss-2022b
-```
-3. List which R packages are installed with `R-bundle-CRAN` and `R-bundle-Bioconductor` modules:
-```
-module help R-bundle-CRAN/2024.06-foss-2022b
-module help R-bundle-Bioconductor/3.19-foss-2022b-R-4.4.1
+module spider R
 ```
 Loading `R/4.4.1-foss-2022b` automatically loads both `R-bundle-CRAN/2024.06-foss-2022b` and `R-bundle-Bioconductor/3.19-foss-2022b-R-4.4.1` modules. With these three modules loaded, there are over 1000 R packages installed and ready to use.
 
-4. Let's find out whether Seurat 5.1.0 version is already installed with these modules:
+2. Let's find out whether Seurat 5.1.0 version is already installed with these modules:
 ```
 module spider Seurat/5.1.0
 ```
@@ -36,19 +27,19 @@ The output indicates that this version of Seurat is already included in the `R-b
 
 ### Now, let's start an R session:
 
-1. In the terminal, request an interactive compute session:
+3. In the terminal, request an interactive compute session:
 ```
 salloc
 ```
-2. Load the R module:
+4. Load the R module:
 ```
 module load R/4.4.1-foss-2022b
 ```
-3. Start an R session:
+5. Start an R session:
 ```
 R
 ```
-4. Load Seurat package
+6. Load Seurat package
 ```
 library(Seurat)
 ```
