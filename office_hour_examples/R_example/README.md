@@ -9,7 +9,7 @@ Our documentation on R : https://docs.ycrc.yale.edu/clusters-at-yale/guides/r/
 
 *All three sections are independent, so feel free to work on any of the sections. 
 
-## Use R module and install additional packages from a terminal
+## Use R module from a terminal
 
 ### Open up a terminal
 
@@ -43,7 +43,7 @@ R
 ```
 library(Seurat)
 ```
-Because `Seurat` is alrady installed, it will not return any error. If you find the package you would like to use is not already installed, you can use commands such as `install.packages()`. 
+Because `Seurat` is alrady installed, it will not return any error. If you find the package you would like to use is not already installed, you can use commands such as `install.packages()` and `BiocManager::install()`. 
 5. Exit the R session:
 ```
 q()
