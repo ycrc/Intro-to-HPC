@@ -11,7 +11,7 @@ Our documentation on MATLAB: https://docs.ycrc.yale.edu/clusters-at-yale/guides/
 
 1. On Open OnDemand, request a MATLAB session with the version MATLAB/2023a  with 1 CPU for 1 hour
 2. Launch a MATLAB session 
-3. Navigate the file system to find `spehere_example.m`
+3. Navigate the file system to find `spehere_example.m` It is in `~/project/workshop/Intro-to-HPC/office_hour_examples/MATLAB_example`.
 5. Run the code to ensure that it does not produce any errors and generates a plot 
 6. To quit the MATLAB session, type exit in your console, close the tab, and delete the session to free up compute resources. 
 
