@@ -1,8 +1,5 @@
 #!/bin/bash
 
-### Run on workshop reservation, remove this line if you are submitting this after the workshop ####
-#SBATCH --reservation=ycrc_intro
-
 ### Run on day partition ###
 #SBATCH -p day 
 

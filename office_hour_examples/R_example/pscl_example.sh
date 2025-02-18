@@ -2,8 +2,8 @@
 
 #-------- Replace XXXX with correct flags and values -----------#
 
-#### Run on workshop reservation. Comment this out if you are running this job after the workshop ###
-#SBATCH --reservation=ycrc_intro
+#### Run in day partition###
+#SBATCH -p day
 
 #### Request 10 minites of run time ###
 #SBATCH XX 10:00

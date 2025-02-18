@@ -2,8 +2,8 @@
 
 #---------- Replace XXXX with correct flags and values -----------#
 
-#### Run on workshop reservation. If you are running this job after workshop, comment this line out.###
-#SBATCH --reservation=ycrc_intro  
+### Run in day partition ###
+#SBATCH -p day
 
 #### Request 10 GB of memory per CPU ###
 #SBATCH --mem-per-cpu XXX

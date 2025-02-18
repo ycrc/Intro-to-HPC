@@ -1,10 +1,7 @@
 #!/bin/bash
 
-### Run on workshop reservation, remove this line if you are submitting this after the workshop ####
-##SBATCH --reservation=ycrc_intro
-
 ### Run on day partition ###
-#SBATCH -p day
+#SBATCH -p admintest
 
 ### Request 1 GB of mem/cpu ###
 #SBATCH --mem-per-cpu=1G
@@ -14,7 +11,6 @@
 
 ### Receive email notifications when this job starts/completes ###
 #SBATCH --mail-type=all
-
 
 
 
