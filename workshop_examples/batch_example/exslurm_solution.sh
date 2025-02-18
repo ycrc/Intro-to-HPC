@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### Run on day partition ###
-#SBATCH -p admintest
+#SBATCH -p day
 
 ### Request 1 GB of mem/cpu ###
 #SBATCH --mem-per-cpu=1G
