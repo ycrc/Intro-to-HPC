@@ -1,5 +1,5 @@
 # Run Monte Carlo simulations to approximate the value of pi 
-runs <-250000000
+runs <-120000000
 within_circle <- 0
 for (x in 1:runs){
     #runif samples from a uniform distribution
