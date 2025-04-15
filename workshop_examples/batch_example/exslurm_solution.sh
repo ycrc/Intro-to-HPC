@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### Run on day partition ###
-#SBATCH -p day
+#SBATCH -p devel
 
 ### Request 1 GB of mem/cpu ###
 #SBATCH --mem-per-cpu=1G
