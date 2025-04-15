@@ -10,6 +10,11 @@ for (x in 1:runs){
 	within_circle <- within_circle +1 
     }
     pi_estimate <- (sum(within_circle)/x)*4
+
+    if(x %% 120000 == 0) {
+        message(sprintf("%5.1f percent complete", 100*x/runs))
+    }
+
 }
 print(paste("MC Approximation of Pi =",pi_estimate))
 
