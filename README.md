@@ -2,6 +2,14 @@
 
 Our slides are located at [https://tinyurl.com/Intro-HPC-01-22-26](https://tinyurl.com/Intro-HPC-01-22-26)
 
+## Exercise commands to copy and paste
+
+The following shell commands go together with the the workshop slides and can be pasted into the terminal. 
+
+We recommend doing this one line at a time so you can observe each result individually. 
+
+Note, lines beginning with the pound sign '#' are comments, and don't do anything.
+
 ## Navigating and using HPC
 
 #### Browsing files and directories
@@ -116,13 +124,7 @@ getquota
 
 
 
-## Exercise commands to copy and paste
 
-The following shell commands go together with the the workshop slides and can be pasted into the terminal. 
-
-We recommend doing this one line at a time so you can observe each result individually. 
-
-Note, lines beginning with the pound sign '#' are comments, and don't do anything.
 
 ### Running python
 
