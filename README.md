@@ -89,14 +89,22 @@ rm ~/hello_copy.txt
 ls ~/hello*
 ```
 
-## Transfering data
+## Transfer data
 
-ssh to the transfer node and copy data to your home folder
+ssh to the transfer node and copy data to your home folder. Use the following paths depending on your cluster. e.g. for bouchet, use `cd /apps/data/training`
+
+| Cluster   | Data Path                           |
+|-----------|-------------------------------------|
+| mccleary | /gpfs/gibbs/data                    |
+| grace    | /gpfs/gibbs/data                    |
+| bouchet  | /apps/data                          |
+| misha    | /gpfs/radev/apps/services/data      |
+| milgram  | /gpfs/milgram/data                  |
 
 ```bash
 ssh transfer
 
-# See the slides to find the correct directory to replace "<data directory>" below. e.g. for bouchet, use `cd /apps/data/training`
+# See the table above to replace "<data directory>" with the appropriate path depending on your cluster. 
 cd <data directory>/training
 
 # Now copy the workshop data to your home directory
@@ -121,9 +129,6 @@ Viewing quotas
 ```bash
 getquota
 ```
-
-
-
 
 
 ### Running python
