@@ -1,6 +1,120 @@
 # Intro-to-HPC
 
-Our slides are located at [https://tinyurl.com/Intro-HPC-09-29](https://tinyurl.com/Intro-HPC-09-29)
+Our slides are located at [https://tinyurl.com/Intro-HPC-01-22-26](https://tinyurl.com/Intro-HPC-01-22-26)
+
+## Navigating and using HPC
+
+#### Browsing files and directories
+
+Print the path to the current directory
+
+```bash
+pwd
+```
+
+List files and directories in the current directory
+
+```bash
+ls
+```
+
+Change to a different directory
+
+```bash
+cd ~/project
+pwd
+```
+
+Go up one directory
+
+```bash
+cd ..
+```
+
+Go to your home directory (both of the commands below do the same thing)
+```bash
+cd ~
+cd
+```
+
+#### View file contents
+
+Display the contents of a file
+```bash
+cat ~/hello.txt
+```
+
+#### Edit file contents
+
+Edit a file
+```bash
+nano ~/hello.txt
+# Now edit the file
+# ^O to save
+# ^X to exit
+```
+
+#### Create, move and delete files and directories
+
+Create a directory
+```bash
+mkdir ~/project/workshop
+ls ~/project
+```
+
+Copy files
+```bash
+cp ~/hello.txt ~/hello_copy.txt
+ls ~/hello*
+```
+
+Move files
+```bash
+mv ~/hello.txt ~/project/workshop
+ls ~/hello*
+ls ~/project/workshop
+```
+
+Delete files
+```bash
+rm ~/hello_copy.txt
+ls ~/hello*
+```
+
+## Transfering data
+
+ssh to the transfer node and copy data to your home folder
+
+```bash
+ssh transfer
+
+# See the slides to find the correct directory to replace "<data directory>" below. e.g. for bouchet, use `cd /apps/data/training`
+cd <data directory>/training
+
+# Now copy the workshop data to your home directory
+cp -r Intro-to-HPC ~/project/workshop
+
+# Or try rsync
+rsync -Pa Intro-to-HPC ~/project/workshop
+
+#exit the transfer node
+exit
+```
+
+Alternative if the above did not work
+```bash
+cd ~/project/workshop
+git clone https://github.com/ycrc/Intro-to-HPC
+```
+
+## Understanding quotas
+
+Viewing quotas
+```bash
+getquota
+```
+
+
 
 ## Exercise commands to copy and paste
 
