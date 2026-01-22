@@ -4,7 +4,7 @@ Our slides are located at [https://tinyurl.com/Intro-HPC-01-22-26](https://tinyu
 
 ## Exercise commands to copy and paste
 
-The following shell commands go together with the the workshop slides and can be pasted into the terminal. 
+The following shell commands go together with the the workshop slides and can be pasted into the terminal (control-v on a PC, command-v on a Mac). 
 
 We recommend doing this one line at a time so you can observe each result individually. 
 
