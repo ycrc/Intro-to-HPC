@@ -1,5 +1,7 @@
 # Run Monte Carlo simulations to approximate the value of pi 
-runs <-120000000
+#runs <-120000000 # takes about 200sec
+runs <- 30000000 # should be ~50 sec
+
 within_circle <- 0
 
 message(sprintf("Percent complete: "))
