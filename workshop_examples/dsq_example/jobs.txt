@@ -1,0 +1,10 @@
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.1 | samtools sort -O bam -o allreads.bam.1
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.2 | samtools sort -O bam -o allreads.bam.2
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.3 | samtools sort -O bam -o allreads.bam.3
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.4 | samtools sort -O bam -o allreads.bam.4
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.5 | samtools sort -O bam -o allreads.bam.5
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.6 | samtools sort -O bam -o allreads.bam.6
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.7 | samtools sort -O bam -o allreads.bam.7
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.8 | samtools sort -O bam -o allreads.bam.8
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.9 | samtools sort -O bam -o allreads.bam.9
+module reset; module load SAMtools BWA; bwa mem -t $SLURM_CPUS-PER_TASK /nfs/roberts/courses/INP7560/genome.fa /nfs/roberts/courses/INP7560/allreads.fa.10 | samtools sort -O bam -o allreads.bam.10
