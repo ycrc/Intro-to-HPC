@@ -1,5 +1,16 @@
                                                           Python exercises
+Interactive python example							  
+Objective:
+	Run and debug a simple python script on a cluster terminal node
 
+1. In the terminal, request an interactive compute session with ‘salloc’
+2. Load the Python module with `module load Python`
+3. Run the script with `python interpyexample.py`
+4. When the job fails, pinpoint the offending line in the script and add the missing colon ':' to the end
+   of the line
+5. Rerun the script to see the successful output
+
+Conda/jupyter/batch script python example
 Objective:
 	Use the miniconda module and create your own environment
         Successfully load your new anaconda environment into the jupyter notebook interface on OOD
