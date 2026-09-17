@@ -1,6 +1,8 @@
 # Intro-to-HPC
 
-Our slides are located at [https://tinyurl.com/Intro-HPC-01-22-26](https://tinyurl.com/Intro-HPC-01-22-26)
+Welcome to the Intro to HPC workshop.
+
+The workshop slides are available [here](https://docs.google.com/presentation/d/1UniGTW1qwJy6S9RbLyb8wQZYQyuPJYATZyRpc_Kjv74/edit?slide=id.p#slide=id.p).
 
 ## Exercise commands to copy and paste
 
@@ -173,4 +175,4 @@ conda create -y -n notebook_env python numpy pandas matplotlib notebook
 # Step 2: To add your environment to the OOD Jupyter miniconda menu:
 ycrc_conda_env.sh update
 ```
-###   
+###
