@@ -1,5 +1,6 @@
 # Run Monte Carlo simulations to approximate the value of pi 
-runs <- 100000000 # a couple minutes on bouchet
+#runs <-120000000 # takes about 200sec
+runs <- 30000000 # should be ~50 sec
 
 within_circle <- 0
 
@@ -19,7 +20,7 @@ for (x in 1:runs){
         cat(".")
     }
     if(x %% (runs/100) == 0) {
-        cat(sprintf("%3.f %% ; Estimate: %10.6f\n", 100*x/runs, pi_estimate))
+        cat(sprintf("%3.f\n", 100*x/runs))
     }
 }
 print(paste("MC Approximation of Pi =",pi_estimate))
